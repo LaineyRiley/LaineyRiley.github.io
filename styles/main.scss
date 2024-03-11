@@ -1,0 +1,28 @@
+//main scss file
+@import "globals";
+@import "variables";
+@import "buttons";
+
+*{
+    color: $typeface;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    min-height: 120px;
+    width:100%;
+    background-color: $background;
+    margin:0;
+
+
+    ul{
+        display: flex; 
+        justify-content: center;
+        flex-direction:row;
+        list-style:none;
+        margin: auto ;
+    }
+}
