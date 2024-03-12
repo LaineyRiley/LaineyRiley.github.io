@@ -1,0 +1,77 @@
+.btn {
+  background-color: #F19C79;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+
+* {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #253031;
+}
+
+body {
+  margin: 0;
+  background-color: #FCFBEE;
+}
+
+header {
+  max-height: 120px;
+  padding: 0 20px;
+  width: 100%;
+}
+header nav {
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+}
+header nav .logo {
+  width: 200px;
+}
+header nav ul {
+  float: right;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+header nav ul li {
+  float: left;
+  font-size: 1.5rem;
+}
+header nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+#hero h1 {
+  font-size: 5rem;
+}
+#hero h1 span {
+  font-size: 5rem;
+  color: #F19C79;
+}
+#hero h2 {
+  font-size: 2rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+footer img {
+  float: left;
+}
+footer ul {
+  float: right;
+}/*# sourceMappingURL=main.css.map */

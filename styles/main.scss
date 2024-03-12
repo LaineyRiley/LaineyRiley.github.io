@@ -3,26 +3,84 @@
 @import "variables";
 @import "buttons";
 
-*{
-    color: $typeface;
+* {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: $dark;
 }
 
-body{
+body {
     margin: 0;
+    background-color: $background;
 }
 
 header {
-    min-height: 120px;
-    width:100%;
-    background-color: $background;
-    margin:0;
+    max-height: 120px;
+    padding: 0 20px;
+    width: 100%;
+
+    nav {
+        max-width: 1200px;
+        padding: 20px;
+        margin: auto;
+
+        .logo {
+            width: 200px;
+
+        }
+
+        ul {
+            float: right;
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+
+            li {
+                float: left;
+                font-size: 1.5rem;
+
+                a {
+                    display: block;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+
+#hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+
+        span {
+            font-size: 5rem;
+            color: $second;
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
 
 
-    ul{
-        display: flex; 
-        justify-content: center;
-        flex-direction:row;
-        list-style:none;
-        margin: auto ;
+    img {
+        float: left;
+    }
+
+    ul {
+        float: right;
     }
 }
