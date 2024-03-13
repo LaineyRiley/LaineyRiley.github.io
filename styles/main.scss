@@ -51,30 +51,99 @@ header {
     }
 }
 
-#hero {
-    max-width: 1000px;
-    margin: 0 auto;
+.hero {
+    width: 100%;
     text-align: center;
+    background-color: $second;
+    min-height: 800px;
+    margin: 0;
 
-    h1 {
-        font-size: 5rem;
+    #box-containers {
+        width: 1000px;
+        height: 500px;
+        position: absolute;
+        top: 25%;
+        left: 22.5%;
 
-        span {
-            font-size: 5rem;
-            color: $second;
+        .layered-box {
+            box-shadow: 1px 1px 10px $grey;
+            width: 1000px;
+            height: 500px;
+            position: absolute;
+        }
+
+        #grey-box {
+            background-color: $primary;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+
+        #green-box {
+            background-color: $third;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        #white-box {
+            background-color: #fff;
+
+            .hero-content {
+                padding: 2rem;
+
+
+                h1 {
+                    font-size: 5rem;
+
+                    span {
+                        font-size: 5rem;
+                        color: $second;
+                    }
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
         }
     }
 
-    h2 {
-        font-size: 2rem;
+}
+
+#boxes {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: -3rem auto 3rem;
+    gap: 20px;
+
+    .informationBox {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 1rem;
+        min-width: 300px;
+        text-align: center;
+        box-shadow: 2px 2px 10px $grey;
+
+        .fa-solid {
+            color: $primary;
+            font-size: 4rem;
+        }
+
+        .box-content {
+
+            ul {
+                list-style: none;
+                margin-left: 0;
+                margin-top: 0;
+                padding: 0;
+            }
+
+        }
     }
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-
 
     img {
         float: left;
